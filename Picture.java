@@ -92,4 +92,14 @@ public class Picture
             sun.changeColor("yellow");
         }
     }
+    /**
+     * Move the sun slowly
+     */
+    public void moveSun()
+    {
+        if (sun != null)   // only if it's painted already...
+        {
+            sun.slowMoveVertical(120);
+        }
+    }
 }
