@@ -76,6 +76,7 @@ public class Picture
             window.changeColor("white");
             roof.changeColor("black");
             sun.changeColor("black");
+            suelo.changeColor("black");
         }
     }
 
@@ -90,16 +91,22 @@ public class Picture
             window.changeColor("black");
             roof.changeColor("green");
             sun.changeColor("yellow");
+            suelo.changeColor("green");
         }
     }
     /**
-     * Move the sun slowly
+     * Move the sun slowly and change this picture to black/white display
      */
     public void moveSun()
     {
         if (sun != null)   // only if it's painted already...
         {
             sun.slowMoveVertical(120);
+            wall.changeColor("black");
+            window.changeColor("white");
+            roof.changeColor("black");
+            sun.changeColor("black");
+            suelo.changeColor("black");
         }
     }
 }
